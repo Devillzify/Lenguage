@@ -1,0 +1,33 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="-35 -60 70 120"
+        width="350"
+        height="600"
+>
+    <defs>
+        <radialGradient id="grad1" r="120" cx="0" cy="0" fx="0" fy="0" gradientUnits="userSpaceOnUse">
+            <stop stop-color="lightgray" offset="0%" />
+            <stop stop-color="#000" offset="100%" />
+        </radialGradient>
+        <radialGradient id="grad2" r="120" cx="0" cy="0" fx="0" fy="0" gradientUnits="userSpaceOnUse">
+            <stop stop-color="gray" offset="0%" />
+            <stop stop-color="#000" offset="100%" />
+        </radialGradient>
+        <radialGradient id="grad3" r="120" cx="0" cy="0" fx="0" fy="0" gradientUnits="userSpaceOnUse">
+            <stop stop-color="darkgray" offset="0%" />
+            <stop stop-color="#000" offset="100%" />
+        </radialGradient>
+        <g id="cubo">
+            <polygon points="0 -40 35 -20 0 0 -35 -20" fill="url(#grad1)"/>
+            <polygon points="35 -20 35 20 0 40 0 0" fill="url(#grad2)"/>
+            <polygon points="-35 -20 0 0 0 40 -35 20" fill="url(#grad3)"/>
+        </g>
+    </defs>
+    <use xlink:href="#cubo"/>
+    <use xlink:href="#cubo" transform="translate(35, 60)"/>
+    <use xlink:href="#cubo" transform="translate(35, -60)"/>
+    <use xlink:href="#cubo" transform="translate(-35, 60)"/>
+    <use xlink:href="#cubo" transform="translate(-35, -60)"/>
+
+</svg>

@@ -1,0 +1,44 @@
+body > div {
+    background-color: purple;
+    width: 1100px;
+    height: 660px;
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+
+
+}
+div > div {
+    box-sizing: border-box;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display:flex;
+
+}
+div > div:nth-last-of-type(n+22){
+    width:100px;
+    height: 100px;
+}
+
+div > div:nth-of-type(n+8){
+    width:200px;
+    height: 200px;
+}
+div > div:nth-of-type(1),
+div > div:nth-of-type(4n+8)
+{
+    height: 60px;
+}
+div > div:nth-of-type(10n+18){
+    height: 200px;
+}
+div > div:nth-of-type(12n+13),
+div > div:nth-of-type(27)
+{
+    height: 100px;
+}
+div > div:nth-of-type(15){
+    height: 300px;
+}

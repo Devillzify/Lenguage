@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Animació SMIL</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #00ffff;
+        }
+
+        svg {
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-100 -100 200 200" width="800" height="800">
+    <rect x="-80" y="-80" width="160" height="160" fill="white" stroke="#C00" stroke-width="4" stroke-dasharray="640" stroke-linecap="square">
+        <animate id="a" attributeName="stroke-dashoffset" from="-640" to="0" dur="4s" fill="freeze" />
+        <animate id="b" attributeName="rx" from="0" to="80" begin="a.end" dur="2s" fill="freeze" />
+        <animate id="c" attributeName="fill" from="#FFF" to="#FE0" begin="b.end" dur="2s" fill="freeze" />
+    </rect>
+    <!--
+            <circle cx="0" cy="80" r="10" fill="#9CF" stroke="#C00" stroke-width="4">
+                <animate id="d" attributeName="opacity" dur="10s" values="0; 0; 1" keyTimes="0; 0.8; 1"/>
+    -->
+    <circle cx="0" cy="80" r="10" fill="#FE0" stroke="#C00" stroke-width="4" opacity="0">
+        <set attributeName="opacity" to="1" begin="c.end"/>
+        <animateTransform id="d" attributeName="transform" type="rotate" from="0" to="360" begin="indefinite" dur="2s" />
+        <animateTransform id="e" attributeName="transform" type="translate" by="0 -80" begin="d.end" dur="2s" fill="freeze"/>
+        <animate id="f" attributeName="fill" from="#FE0" to="white" dur="2s" begin="click" fill="freeze"/>
+        <animate id="g" attributeName="r" from="10" to="40" begin="f.end" dur="2s" fill="freeze" />
+    </circle>
+</svg>
+</body>
+
+</html>
