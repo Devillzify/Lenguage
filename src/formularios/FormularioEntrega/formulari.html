@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8"/>
+    <title>formulari 21/22</title>
+    <link href="formulario2.css" rel="stylesheet"/>
+</head>
+<body>
+    <form method="get" novalidate="novalidate" onsubmit="return validar();">
+        <label class="section letralabel">Unete al Escuadron</label>
+        <label class="letrascheckbox" for="name" >Nombre: <span></span></label>
+        <input id="name" type="text" name="name" oninput="validar_name()" placeholder="Abcd Abcd Abcd"/>
+        <label class="letrascheckbox" for="email">eMail: <span></span></label>
+        <input id="email" type="text" name="email" oninput="validar_email()" placeholder="abcdef@ghijklm.abc"/>
+        <label class="letrascheckbox" for="apodo">Apodo: <span></span></label>
+        <input id="apodo" type="text" name="apodo" oninput="validar_apodo()" placeholder="Da1b2cdef"/>
+
+        <label class="section letralabel" id="topics">Elementos de interes<span></span></label>
+        <div>
+            <label class="letrascheckbox"><input type="checkbox" name="topics" value="fir"/>Fire</label>
+            <label class="letrascheckbox"><input type="checkbox" name="topics" value="sad"/>Shadows</label>
+            <label class="letrascheckbox"><input type="checkbox" name="topics" value="gun"/>Guns</label>
+            <label class="letrascheckbox"><input type="checkbox" name="topics" value="mel"/>Melee</label>
+            <label class="letrascheckbox"><input type="checkbox" name="topics" value="sci"/>Science</label>
+            <label class="letrascheckbox"><input type="checkbox" name="topics" value="nin"/>Ninja</label>
+            <label class="letrascheckbox"><input type="checkbox" name="topics" value="ass"/>Assasin</label>
+            <label class="letrascheckbox"><input type="checkbox" name="topics" value="sni"/>Snipers</label>
+        </div>
+        <label class="section letralabel" id="duration">Seleccion de avatar<span></span></label>
+        <div id="bruja">
+            <label class="letrasradius"><input type="radio" oninput="myFunction(this.value)" name="duration" value="bruja"/>Bruja</label>
+        </div>
+
+        <div id="diablo">
+            <label class="letrasradius"><input type="radio" oninput="myFunction(this.value)" name="duration" value="diablo"/>Diablo</label>
+        </div>
+
+        <div id="harley">
+            <label class="letrasradius"><input type="radio" oninput="myFunction(this.value)" name="duration" value="harley"/>Harley Quinn</label>
+        </div>
+
+        <div id="joker">
+            <label class="letrasradius"><input type="radio" oninput="myFunction(this.value)" name="duration" value="joker"/>Joker</label>
+        </div>
+
+        <div id="katana">
+            <label class="letrasradius"><input type="radio" oninput="myFunction(this.value)" name="duration" value="katana"/>Katana</label>
+        </div>
+        <label class="section letralabel">Color de tu Equipo</label>
+        <input type="color" name="colorEquipo"/>
+        <input type="submit" value="Unirse"/>
+        <audio id="myaudio" controls autoplay src="audio/youdontownme.mp3"></audio>
+    </form>
+
+
+    <div id="imagenes">
+
+    </div>
+
+    <audio id="voces" autoplay src=""></audio>
+
+    <script>
+        var vid = document.getElementById("myaudio");
+        vid.volume = 0.1;
+    </script>
+
+    <script src="formulari.js"></script>
+
+</body>
+</html>

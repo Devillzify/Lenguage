@@ -1,0 +1,13 @@
+body > div
+{
+    display:grid;
+    grid-template-columns: 50px 50px [column]repeat(8, 50px );
+    grid-template-rows: 30px [fila] repeat(9, 30px);
+}
+
+div > div
+{
+    background-color: orange;
+    grid-area: 2 / 3 / span 1 / span 3;
+
+}

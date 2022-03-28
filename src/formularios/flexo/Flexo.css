@@ -1,0 +1,18 @@
+body > div {
+    background-color: grey;
+    width: 360px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-end;
+    flex-wrap: wrap;
+}
+div > div {
+    background-color: black;
+    color: #00ffff;
+    width: 100px;
+    height: 100px;
+    font-size: 36pt;
+    border: 2px solid red;
+    box-sizing: border-box;
+}

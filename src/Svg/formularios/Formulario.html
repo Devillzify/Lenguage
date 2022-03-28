@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<form method="get" novalidate="novalidate" onsubmit="return validar();">
+    <label for="name">Name: <span></span></label>
+    <input id="name" type="text" name="name"/>
+    <label for="email">eMail: <span></span></label>
+    <input id="email" type="text" name="email" placeholder="diablo@infierno.org"/>
+    <input type="submit" value="Go!"/>
+</form>
+<script src="formulario.js"></script>
+</body>
+</html>

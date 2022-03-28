@@ -1,0 +1,35 @@
+@font-face
+{
+    font-family: familia;
+    src:url("Saturday.ttf");
+}
+form
+{
+    display: grid;
+    grid-template-columns: 200px 400px;
+    grid-template-rows: repeat(3,auto);
+    background-color: aquamarine;
+    width:fit-content;
+    grid-gap: 8px;
+    padding:8px;
+    border-radius: 20px;
+
+
+
+
+}
+
+input[type="submit"]
+{
+    grid-column-start: 2;
+    justify-self: end;
+}
+label{
+    justify-self: end;
+}
+
+form *
+{
+    font-size:10pt;
+}
+

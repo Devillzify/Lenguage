@@ -1,0 +1,110 @@
+@font-face {
+    font-family: kraash;
+    src: url("Kraash.ttf");
+}
+
+@font-face {
+    font-family: bingBam;
+    src: url("Bing Bam Boum.ttf");
+}
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width:100%;
+}
+
+body {
+    background-image: url("Img/BackgroundPage.jpg"), linear-gradient(to top, deepskyblue, mediumpurple);
+    background-blend-mode: luminosity;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.letrascheckbox
+{
+    font-family: bingBam;
+    font-size: 14pt;
+    width: 25%;
+    float:left;
+    color: #00ffff;
+}
+
+.letrasradius
+{
+    font-family: bingBam;
+    font-size: 14pt;
+    width: 25%;
+    color: #00ffff;
+}
+
+form * {
+    font-size: 16pt;
+}
+
+label {
+    color: white;
+    font-family: bingBam;
+}
+
+input[type="submit"] {
+    width: 300px;
+    align-self: end;
+    justify-self: end;
+    border: none;
+    background-color: blueviolet;
+    margin-top: 16px;
+    border-radius: 20px;
+    font-family: kraash;
+    color:#00ffff;
+}
+
+input[type="submit"]:hover {
+    background-color: lawngreen;
+    box-shadow: 0 0 8px gold;
+    color:black;
+    cursor: pointer;
+}
+
+div:first-of-type {
+    grid-template-rows: repeat(2, auto);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1000px;
+    grid-template-rows: repeat(20 ,auto);
+    grid-gap: 4px;
+    background-color: #666c;
+    width: fit-content;
+    padding: 16px;
+    border: 1px solid white;
+    box-shadow: 0 0 16px #000;
+}
+
+
+.section {
+    color: gold;
+    font-family: kraash;
+}
+
+#topics, #duration {
+    padding-top: 16px;
+}
+
+.letralabel
+{
+    font-family: kraash;
+    color: lightpink;
+}
+
+#imagenes
+{
+    width: 20%;
+    height: 69.5%;
+    background-size: cover;
+    background-position: center center;
+}

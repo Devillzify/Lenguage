@@ -1,0 +1,29 @@
+body{
+    background-image: url("cristal.gif");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+div#principal
+{
+    height: 1400px;
+    width: 1920px;
+    background-color: purple;
+}
+div#titulo
+{
+    float:left;
+    height: 200px;
+    width: 1920px;
+    background-color: red;
+    color:silver;
+    font-size: 30pt;
+}
+div#izquierda
+{
+    float:left;
+    height: 1200px;
+    width: 400px;
+    background-image: url("totoro.gif");
+}
