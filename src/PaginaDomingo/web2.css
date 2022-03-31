@@ -1,0 +1,478 @@
+@font-face {
+    font-family: adrip1;
+    src: url("adrip1.ttf");
+}
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+body
+{
+    background-image: url("img/nebul.gif");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-attachment: fixed;
+}
+
+h1
+{
+    color: hsla(0, 0%, 0%, .9);
+    font: normal 150px Varela Round, adrip1;
+    height:200px;
+    letter-spacing: 5px;
+    margin: -80px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50%;
+    width: 100%;
+    animation: move linear 2000ms infinite;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@keyframes move
+{
+    0%
+    {
+        text-shadow:
+                4px -4px 0 hsla(0, 100%, 50%, 1),
+                3px -3px 0 hsla(0, 100%, 50%, 1),
+                2px -2px 0 hsla(0, 100%, 50%, 1),
+                1px -1px 0 hsla(0, 100%, 50%, 1),
+                -4px 4px 0 hsla(180, 100%, 50%, 1),
+                -3px 3px 0 hsla(180, 100%, 50%, 1),
+                -2px 2px 0 hsla(180, 100%, 50%, 1),
+                -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+    25%
+    {
+        text-shadow:
+                -4px -4px 0 hsla(180, 100%, 50%, 1),
+                -3px -3px 0 hsla(180, 100%, 50%, 1),
+                -2px -2px 0 hsla(180, 100%, 50%, 1),
+                -1px -1px 0 hsla(180, 100%, 50%, 1),
+                4px 4px 0 hsla(0, 100%, 50%, 1),
+                3px 3px 0 hsla(0, 100%, 50%, 1),
+                2px 2px 0 hsla(0, 100%, 50%, 1),
+                1px 1px 0 hsla(0, 100%, 50%, 1);
+    }
+    50%
+    {
+        text-shadow:
+                -4px 4px 0 hsla(0, 100%, 50%, 1),
+                -3px 3px 0 hsla(0, 100%, 50%, 1),
+                -2px 2px 0 hsla(0, 100%, 50%, 1),
+                -1px 1px 0 hsla(0, 100%, 50%, 1),
+                4px -4px 0 hsla(180, 100%, 50%, 1),
+                3px -3px 0 hsla(180, 100%, 50%, 1),
+                2px -2px 0 hsla(180, 100%, 50%, 1),
+                1px -1px 0 hsla(180, 100%, 50%, 1);
+    }
+    75%
+    {
+        text-shadow:
+                4px 4px 0 hsla(180, 100%, 50%, 1),
+                3px 3px 0 hsla(180, 100%, 50%, 1),
+                2px 2px 0 hsla(180, 100%, 50%, 1),
+                1px 1px 0 hsla(180, 100%, 50%, 1),
+                -4px -4px 0 hsla(0, 100%, 50%, 1),
+                -3px -3px 0 hsla(0, 100%, 50%, 1),
+                -2px -2px 0 hsla(0, 100%, 50%, 1),
+                -1px -1px 0 hsla(0, 100%, 50%, 1);
+    }
+
+    100%
+    {
+        text-shadow:
+                4px -4px 0 hsla(0, 100%, 50%, 1),
+                3px -3px 0 hsla(0, 100%, 50%, 1),
+                2px -2px 0 hsla(0, 100%, 50%, 1),
+                1px -1px 0 hsla(0, 100%, 50%, 1),
+                -4px 4px 0 hsla(180, 100%, 50%, 1),
+                -3px 3px 0 hsla(180, 100%, 50%, 1),
+                -2px 2px 0 hsla(180, 100%, 50%, 1),
+                -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+}
+
+.primero
+{
+    width: 1920px;
+    border-radius: 20px;
+    margin-top:100px;
+}
+
+.banner
+{
+    width: 1920px;
+    height: 200px;
+    background-color: rgb(0,255,255,30%);
+    background-image: url("img/image04.gif");
+}
+
+.panel2
+{
+    width: 1920px;
+    height: 100px;
+    background-color: rgb(255,0,255,40%);
+}
+
+.boton *
+{
+    width: 380px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    float: left;
+    font-family: adrip1;
+    font-size: 50pt;
+    color:silver;
+}
+
+.boton *:hover
+{
+    transform: scale(1.2);
+    filter: brightness(150%);
+}
+
+.canciones
+{
+    width: 1920px;
+    height: 800px;
+}
+
+.hatsune
+{
+    width: 380px;
+    height: 800px;
+    box-sizing: border-box;
+    border: 2px solid silver;
+    float: left;
+}
+
+.hatsunecont1
+{
+    width: 380px;
+    height: 400px;
+    background-image: url("img/hatsune.gif");
+    background-size: contain;
+}
+
+.hatsunecont2
+{
+    width: 380px;
+    height: 400px;
+    font-family: adrip1;
+    font-size: 30pt;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color:cyan;
+}
+
+
+.videos
+{
+    width: 1540px;
+    height: 800px;
+    float: left;
+}
+
+.video{
+    width: 770px;
+    height: 400px;
+    float: left;
+    box-sizing: border-box;
+    border: 2px solid silver;
+}
+
+.mejoresfanarts
+{
+    width:1920px;
+    height: 500px;
+}
+
+.mejoresindex
+{
+    width: 380px;
+    height: 500px;
+    float: left;
+    box-sizing: border-box;
+    border: 2px solid silver;
+    background-image: url("img/almohada.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: adrip1;
+    font-size: 30pt;
+    color:cyan;
+    text-align: end;
+    justify-content: center;
+    display: flex;
+    align-items: end;
+}
+.carrusel
+{
+    width: 1540px;
+    height: 500px;
+    background-color: black;
+    box-sizing: border-box;
+    border: 2px solid silver;
+    float: left;
+    display: flex;
+    overflow: scroll;
+}
+
+.img
+{
+    box-sizing: border-box;
+    border: 2px solid silver;
+}
+
+.banner2
+{
+    width: 1920px;
+    height: 200px;
+    background-image: url("img/banner2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: adrip1;
+    font-size: 75pt;
+    color:darkviolet;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+}
+
+
+.topcosplayers
+{
+    width: 1920px;
+    height: 1200px;
+    float: left;
+}
+
+.cosplayer
+{
+    width: 1920px;
+    height: 600px;
+
+    float:left;
+}
+
+.himeahriprofile
+{
+    width: 600px;
+    height: 600px;
+    background-image: url("img/himeahriprofile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    box-sizing: border-box;
+    border: 5px solid #ef00ff;
+    color: #d100ff;
+    font-family: adrip1;
+    text-align: center;
+    align-items: end;
+    display: flex;
+    justify-content: center;
+    font-size: 65pt;
+}
+
+.himeahridescr
+{
+    width: 1320px;
+    height: 600px;
+    background-color: rgb(255,0,255,40%);
+    float: left;
+    box-sizing: border-box;
+    border: 5px solid #ef00ff;
+    color:black;
+    font-size: 55pt;
+    font-family: adrip1;
+    text-align: center;
+}
+
+input[type="button"] {
+    width: 350px;
+    height: 50px;
+    margin-top: 25px;
+    border-radius: 5%;
+    font-family: adrip1;
+    font-size:30pt;
+    box-shadow: 0 0 55px blue;
+    color:black;
+    cursor: pointer;
+    background-color: cyan;
+}
+
+.himeahritext
+{
+    width: 1310px;
+    height: 490px;
+    float: left;
+}
+
+
+.himeahrilinks
+{
+    width: 1310px;
+    height: 100px;
+    background-color: #fa00ff;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seeuxiaorou
+{
+    width: 600px;
+    height: 600px;
+    background-image: url("img/seeuxiaorou.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    box-sizing: border-box;
+    border: 5px solid #ef00ff;
+    color: #d100ff;
+    font-family: adrip1;
+    text-align: center;
+    align-items: end;
+    display: flex;
+    justify-content: center;
+    font-size: 65pt;
+}
+
+
+.seeutext
+{
+    width: 1310px;
+    height: 490px;
+    float: left;
+}
+
+.seeudescr
+{
+    width: 1320px;
+    height: 600px;
+    background-color: rgb(255,0,255,40%);
+    float: left;
+    box-sizing: border-box;
+    border: 5px solid #ef00ff;
+    color:black;
+    font-size: 55pt;
+    font-family: adrip1;
+    text-align: center;
+}
+
+
+.banner3
+{
+    width: 1920px;
+    height: 200px;
+    background-image: url("img/banner3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: adrip1;
+    font-size: 75pt;
+    color:blue;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+}
+
+.animes1
+{
+    width: 1920px;
+    height: 600px;
+}
+
+.animes
+{
+    width: 1920px;
+    height: 500px;
+}
+
+.anime
+{
+    width: 384px;
+    height: 500px;
+    box-sizing: border-box;
+    float: left;
+}
+.valoracion
+{
+    width: 384px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 2px solid silver;
+    float: left;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size:30pt;
+    color:cyan;
+    background-color: rgb(255,0,255,20%);
+}
+
+.valoraciones
+{
+    width: 1920px;
+    height: 100px;
+}
+.anime1
+{
+    background-image: url("img/waifu4.gif");
+    background-size: cover;
+}
+
+.anime:hover
+{
+    transform: scale(2.5);
+    filter: brightness(110%);
+    filter: saturate(300%);
+}
+.anime2
+{
+    background-image: url("img/waifu3.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.anime3
+{
+    background-image: url("img/waifu6.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.anime4
+{
+    background-image: url("img/waifu.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.anime5
+{
+    background-image: url("img/zerotwo.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

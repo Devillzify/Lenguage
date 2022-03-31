@@ -1,0 +1,3 @@
+De los botones de arriba los principales son ANIME y Registrate, los otros son de relleno
+
+Los avatares de anime tienen un efecto hover

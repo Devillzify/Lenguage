@@ -1,0 +1,143 @@
+@font-face {
+    font-family: adrip1;
+    src: url("adrip1.ttf");
+}
+
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url("img/Fondo.svg");
+}
+#principal
+{
+    width:1900px;
+    margin:auto;
+    background-color: cyan;
+}
+
+#arriba
+{
+    width: 1900px;
+    height: 150px;
+    background-image: url("img/banner.png");
+    color: deeppink;
+    position: relative;
+}
+
+#arriba_1
+{
+    width: 1900px;
+    height: 50px;
+    background-color: silver;
+    align-items: baseline;
+    position: absolute;
+    bottom:0px;
+    color:blueviolet;
+    font-size: 30pt;
+    font-family: adrip1;
+}
+
+#menu_1
+{
+    height: 50px;
+    width: 350px;
+}
+
+#menu_2
+{
+    height: 50px;
+    width: 1200px;
+}
+
+#menu_3
+{
+    height: 50px;
+    width: 350px;
+}
+
+.botonmenu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.videos
+{
+    width: 1900px;
+    height: 930px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.imagen *
+{
+    width: 350px;
+    height: 187px;
+    background-color: purple;
+    background-size: cover;
+    font-size: 20pt;
+    color: red;
+    margin-bottom: -6px;
+    float: left;
+
+}
+
+
+
+#enmedio
+{
+    width:600px;
+    height: 600px;
+    background-color: pink;
+    float: left;
+    position: relative;
+}
+
+.descripcion
+{
+    float: left;
+    width: 1200px;
+    height: 187px;
+    font-family: adrip1;
+    font-size: 30pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color:dodgerblue;
+}
+
+.contenedoranime
+{
+    width: 1550px;
+}
+
+.nota
+{
+    float:right;
+    width: 350px;
+    height: 930px;
+}
+
+.notas
+{
+    width: 350px;
+    height: 187px;
+    font-size: 30pt;
+    color: black;
+    background-color: aquamarine;
+    font-family: adrip1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
